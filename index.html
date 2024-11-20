@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joseph George">
     <title>Joseph George - Cybersecurity & AI Specialist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://raw.githubusercontent.com/Joseph-George1/joseph-george1.github.io/refs/heads/main/favicon.ico" type="image/x-icon">
-
+    <script src="script.js"></script>
 </head>
 <body>
-    <header>
+    
+    <nav id="navbar">
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger Icon -->
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="about">
         <div class="profile-container">
             <img src="https://avatars.githubusercontent.com/u/62404986?v=4" alt="Joseph George" class="profile-photo">
             <div class="header-text">
@@ -18,15 +32,14 @@
                 <p>Cybersecurity Enthusiast | AI Learner | Computer Engineering Student</p>
             </div>
         </div>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, my name is Joseph George, and I am a dedicated student at Al Safwa High Institute of Engineering, specializing in Computers. I am passionate about the field of cybersecurity and have been actively honing my skills through hands-on practice on TryHackMe.</p>
-        <p>As a motivated learner, I strive to stay up-to-date with the latest advancements in cybersecurity and continuously expand my knowledge base. My experience on TryHackMe has allowed me to tackle practical challenges, improve my problem-solving abilities, and develop a keen eye for identifying potential vulnerabilities.</p>
-        <p>If you are interested in connecting or discussing potential cybersecurity initiatives, feel free to reach out to me.</p>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello, my name is Joseph George, and I am a dedicated student at Al Safwa High Institute of Engineering...</p>
+            <p>As a motivated learner, I strive to stay up-to-date with the latest advancements in cybersecurity...</p>
+            <p>If you are interested in connecting or discussing potential cybersecurity initiatives, feel free to reach out to me.</p>
+        </div>
     </section>
-
+    
     <section id="experience">
         <h2>Experience</h2>
         <h3>Google Cloud AI Internship</h3>
@@ -105,12 +118,27 @@
 
     <section id="contact">
         <h2>Contact Information</h2>
-        <p>LinkedIn: <a href="https://linkedin.com/in/joseph-george-wahba">Joseph George</a></p>
-        <p>Email: <a href="mailto:joseph.george5@icloud.com">joseph.george5@icloud.com</a></p>
+        <p>
+            <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" class="contact-icon" />
+            <a href="https://linkedin.com/in/joseph-george-wahba" target="_blank">Joseph George</a>
+            <span>(LinkedIn)</span>
+        </p>
+        <p>
+            <img src="icloud-svgrepo-com.svg" alt="Email" class="contact-icon" />
+            <a href="mailto:joseph.george5@icloud.com">joseph.george5@icloud.com</a>
+            <span>(Email)</span>
+        </p>
+        <p>
+            <img src="github-svgrepo-com.svg" alt="Github" class="contact-icon" />
+            <a href="https://github.com/Joseph-George1">Github</a>
+            <span>(Github)</span>
+        </p>
     </section>
-
+    
     <footer>
         <p>&copy; 2024 Joseph George</p>
     </footer>
-</body>
+    </body>
+    
+    
 </html>
