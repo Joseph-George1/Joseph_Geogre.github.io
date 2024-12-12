@@ -312,29 +312,30 @@ section {
 }
 
 section.visible {
-    opacity: 1; /* Fade in */
+    opacity: 1.1; /* Fade in */
     transform: translateY(0); /* Reset position */
 }
 
 #about {
-    height: 100vh; /* Full viewport height */
+    height: 102vh; /* Full viewport height */
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center; /* Center vertically */
-    padding: 20px 5%;
+    padding: 25px 5%;
     scroll-snap-align: start; /* Smooth snapping */
 }
 
 .profile-container {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between photo and text */
+    gap: 25px; /* Space between photo and text */
     margin-bottom: 30px;
 }
 
 .profile-photo {
-    max-width: 200px; /* Adjust size for better fit */
-    border-radius: 50%;
+    max-width: 300px; /* Adjust size for better fit */
+    border-radius: 60%;
     border: 4px solid #00bcd4;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -352,11 +353,14 @@ section.visible {
 
 .about-text {
     margin-top: 20px;
+    font-size: 1.1rem;
     text-align: justify;
+    align-items: left;
+
 }
 
 .about-text h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-bottom: 10px;
     color: #00bcd4;
 }
